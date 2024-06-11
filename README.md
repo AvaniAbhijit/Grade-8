@@ -19,7 +19,9 @@ predefined list.
 **Installation**
 
 Ensure you have Toga installed. If not, you can install it using pip:
+
 pip install toga
+
 Add the Words File Make sure you have a file named english_words.txt in the same directory as your Python script, containing a list of words for the game.
 
 
