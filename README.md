@@ -14,15 +14,18 @@ predefined list.
  **Requirements**
 - Python 3.x
 - Toga
-- A file named `english_words.txt` containing a list of words (one per line)
+- A file named `english_words.txt`, 'actor.txt','sport.txt' containing a list of words (one per line) availble in the text file folder.
+- Images Sad face and Happy face which is available in the images folder.
 
 **Installation**
 
 Ensure you have Toga installed. If not, you can install it using pip:
-
 pip install toga
-
 Add the Words File Make sure you have a file named english_words.txt in the same directory as your Python script, containing a list of words for the game.
+
+**Download**
+1. Happy and Sad face images from the imgaes folder.
+2. Word.txt, sports.txt, actor.txt from the text file folder.
 
 
 
