@@ -88,13 +88,12 @@ class LoginApp(toga.App):
             print("Error registering user:", e)
 
     def show_quiz(self,username):
-        # Create a new window
         
         # Create a label to display a welcome message to the user
         
-        # Add the label to the content of the window
-        
-        # Show the new window
+        # Update the content of the window to this label
+        #self.main_window.content =
+
         
 
 
