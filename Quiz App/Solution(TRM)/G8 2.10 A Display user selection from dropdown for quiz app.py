@@ -87,7 +87,6 @@ class LoginApp(toga.App):
             print("Error registering user:", e)
 
     def show_quiz(self,username):
-        self.new_window = toga.MainWindow(title="New Window")
         box1 = toga.Box(style=Pack(direction=COLUMN, padding = 10))
 
         message_label = toga.Label(f'Welcome to the Quiz {username}!', style=Pack(padding=10))
@@ -103,10 +102,8 @@ class LoginApp(toga.App):
         self.selected_label = toga.Label('Selected option: ')
         box1.add(self.selected_label)
 
-        self.new_window.content = box1
-        # Show the new window
-        self.new_window.show()
-
+        self.main_window.content = box1
+        
     def display_selected_option(self, widget): #function to identify the selected option
         selected_option = widget.value #get the value
         self.selected_label.text = f"Selected option: {selected_option}" #display it
