@@ -87,7 +87,6 @@ class LoginApp(toga.App):
             print("Error registering user:", e)
 
     def show_quiz(self,username):
-        self.new_window = toga.MainWindow(title="New Window")
         box1 = toga.Box(style=Pack(direction=COLUMN, padding = 10))
 
         message_label = toga.Label(f'Welcome to the Quiz {username}!', style=Pack(padding=10))
@@ -100,14 +99,8 @@ class LoginApp(toga.App):
         box1.add(selection)
         box1.add(close_button)
 
-        self.new_window.content = box1
-        # Show the new window
-        self.new_window.show()
+        self.main_window.content = box1
+        
 
-
-def main():
-    return LoginApp('fbconnect', 'fbconn')
-
-if __name__ == '__main__':
-    app = main()
-    app.main_loop()
+app = LoginApp('fbconnect', 'fbconn')
+app.main_loop()
