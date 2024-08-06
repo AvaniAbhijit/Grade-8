@@ -6,6 +6,10 @@
 # - - op2: "Ctrl A"
 # - - op3: "Ctrl Z"
 # - - op4: "Ctrl V"
+# Note: the key/reference for the subject is CS
+# Note: The key/reference under CS is the first question 
+# Note: the key for options is "op<number>" and for the answer is "ans".
+# Note: The value of answer is the option number.
 # task2: Similarly, for every subject create 2 questions and related options and 1 answer in firebase
 # task3: In display_selected_option(), use conditional statement to set the subject key based on the selected option.
 
