@@ -1,6 +1,6 @@
 #task 1: Observe the code from line 125 to 140 to see how the questions are retrieved for the subject
-#task 2: Write the code for displaying other options for the question retrieved.
-# One has been shown to you as an example.
+#task 2: Write the code for displaying other options - op1, op2,op3, op4 for the question retrieved.
+# One (op1) has been shown to you as an example.
 
 import toga
 from toga.style import Pack
@@ -105,8 +105,8 @@ class LoginApp(toga.App):
         box1.add(selection)
         box1.add(close_button)
 
-        self.selected_label = toga.Label('Selected option: ')
-        box1.add(self.selected_label)
+        #self.selected_label = toga.Label('Selected option: ')
+        #box1.add(self.selected_label)
 
         self.main_window.content = box1
         
@@ -133,7 +133,7 @@ class LoginApp(toga.App):
         self.current_index = 0    
         self.box2 = toga.Box(style=Pack(direction=COLUMN, padding = 10))
 
-        #Retrieve the question and the options for the first question
+        #Retrieve the question and the options(op1,op2,op3,op4 and ans) for the first question
         self.ques_label = toga.Label('Question: '+ self.ques[self.current_index][0], style=Pack(padding=10))
         self.box2.add(self.ques_label)
         self.option1=toga.Label('Option 1: ' + str(self.ques[self.current_index][1]['op1']), style=Pack(padding=10))
