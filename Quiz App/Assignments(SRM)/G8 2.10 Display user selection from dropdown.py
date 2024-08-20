@@ -93,7 +93,7 @@ class LoginApp(toga.App):
         box1 = toga.Box(style=Pack(direction=COLUMN, padding = 10))
 
         message_label = toga.Label(f'Welcome to the Quiz {username}!', style=Pack(padding=10))
-        selection = toga.Selection(items=["Select a subject", "Maths", "Physics", "Computer Science", "General Knowledge"]) #call function when user selects an option
+        selection = toga.Selection(items=["Select a subject", "Maths", "Physics", "Computer Science", "General Knowledge"], on_change=self.display_selected_option) #call function when user selects an option
         selection.value = "Select a subject"
 
         # Create a button to close the new window
